@@ -11,3 +11,12 @@ int main() {
     } else {
         printf("Error in RGB to CMYK conversion\n");
     }
+    // Test CMYK to RGB conversion
+    if (cmykToRGB(0, 1, 1, 0, &r, &g, &b) == 0) {
+        printf("CMYK(0, 1, 1, 0) -> RGB(%d, %d, %d)\n", r, g, b);
+    } else {
+        printf("Error in CMYK to RGB conversion\n");
+    }
+
+    return 0;
+}
